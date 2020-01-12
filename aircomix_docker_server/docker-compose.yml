@@ -1,0 +1,11 @@
+version: '3'
+services:
+    aircomix-server:
+        build: .
+        volumes:
+            - "./aircomix:/volume1/comics"
+        ports: 
+            - "80/tcp"
+            - 31257:31257/tcp
+            - 31257:31257/udp
+            
